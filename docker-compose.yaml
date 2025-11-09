@@ -1,0 +1,10 @@
+services:
+  dev:
+    image: alpine:latest
+    container_name: cs416
+    working_dir: /workspace
+    volumes:
+      - ./src:/workspace
+    tty: true
+    stdin_open: true
+    command: sh

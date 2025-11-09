@@ -1,0 +1,15 @@
+{
+  "name": "cs416",
+  "image": "alpine:latest",
+  "postCreateCommand": "apk add --no-cache git build-base",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools"
+      ],
+      "settings": {
+        "C_Cpp.clang_format_fallbackStyle": "Google"
+      }
+    }
+  }
+}
